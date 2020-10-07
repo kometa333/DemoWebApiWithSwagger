@@ -94,7 +94,7 @@ namespace DemoWebApiWithSwagger.Controllers
 
                 foreach (var item in itemList)
                 {
-                    responseBuilder.Append("[ArticleNo: " + item.ArticleNo + ", TotalSalesPrice: €" + item.TotalSalesPrice + ".]");
+                    responseBuilder.Append("[ArticleNo: " + item.ArticleNo + ", TotalSalesPrice: €" + item.TotalSalesPrice + "]  ");
                 }
                 return Request.CreateResponse(HttpStatusCode.OK, responseBuilder.ToString());
             }
